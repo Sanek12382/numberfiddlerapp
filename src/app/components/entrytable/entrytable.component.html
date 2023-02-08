@@ -1,0 +1,19 @@
+<button class="resfresh-table" type="button" (click)="updateRows()">
+  Update table contents
+</button>
+
+<table>
+  <tr>
+    <th *ngFor="let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+
+  <tr *ngFor="let row of rows">
+    <td>{{row.name}}</td>
+    <td>{{row.contentSum}}</td>
+    <td>{{row.date}}</td>
+  </tr>
+
+</table>
